@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Development Workflow</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    article {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        margin-bottom: 16px;
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    div {
+        margin-bottom: 8px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <h1>Registration Form</h1>
+    <article>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="date">Date of birth:</label>
+            <input type="date" name="birth" id="birth">
+
+            <label for="name">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <fieldset>
+                <legend>Select your gender:</legend>
+
+                <div>
+                    <input type="radio" name="male" id="male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="female" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </article>
+</body>
+
+</html>
